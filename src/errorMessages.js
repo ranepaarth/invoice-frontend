@@ -1,0 +1,17 @@
+export const errorMessages = {
+  name: "Name is required!",
+  address: "Address is required!",
+  city: "Provide the city!",
+  state: "State is required!",
+  pinCode: "Provide a pin code!",
+  panNumber: "PAN is required!",
+  gstRegNo: "Provide a GST registration number!",
+  placeOfSupply: "Place of Supply cannot be empty!",
+  stateUtCode: "State/UT code is necessary!",
+  placeOfDelivery: "Provide the delivery place!",
+  orderNumber: "Order number is required!",
+  orderDate: "Provide the date on which the order was placed!",
+  itemDesc: "Provide some description about this item!",
+  itemQty: "Item Quantity is required!",
+  itemUnitPrice: "Provide price of one item!",
+};
