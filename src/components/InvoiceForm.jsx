@@ -54,7 +54,6 @@ const InvoiceForm = () => {
     formData.append("signature", data.signature[0]);
     data = { ...data, signature: data.signature[0].name };
     formData.append("invoice", JSON.stringify(data));
-    console.log(formData);
 
     const response = await axios.post(
       "http://localhost:5000/api/v1/generate-invoice",
@@ -71,17 +70,14 @@ const InvoiceForm = () => {
     }
 
     window.open(response.data.pdf);
-
-    console.log(response);
   };
 
   const onError = (data) => {
-    console.log(data);
+    console.log("Invalid form fields!");
   };
 
   const nextStep = async (e) => {
     const isValid = await form.trigger();
-    console.log(isValid);
     if (isValid) {
       next();
     }

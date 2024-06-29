@@ -17,7 +17,6 @@ const Item = ({ item, index }) => {
 
   let itemTotalAmount;
 
-  console.log(qty, unitPrice, discount, taxRate);
 
   useEffect(() => {
     setValue(`lineItems.${index}.taxRate`, "18%");

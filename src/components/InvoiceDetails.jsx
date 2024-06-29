@@ -40,7 +40,6 @@ const InvoiceDetails = () => {
             onChange={(e) => {
               setToggle(!toggle);
               setValue("reverseCharge", e.target.checked);
-              console.log(e.target.checked);
             }}
           />
           <span className="label">Reverse charge</span>

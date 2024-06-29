@@ -6,7 +6,6 @@ const CompanyLogo = () => {
   const { register, setValue, control, watch } = useFormContext();
 
   const image = watch("companyLogo");
-  console.log(image);
   return (
     <CardWrapper
       cardHeader={"Company logo"}
